@@ -1,5 +1,3 @@
-@"
-
 # Anime Recommendation System
 
 ## Project Overview
@@ -24,53 +22,48 @@ A Django-based REST API for anime recommendations, utilizing AniList GraphQL API
 
 ### 1. Clone the Repository
 
-\`\`\`bash
-git clone https://github.com/yourusername/anime-recommendation-system.git
+
+git clone https://github.com/akshatverma13/Xstage_Assignment
 cd anime-recommendation-system
-\`\`\`
+
 
 ### 2. Create Virtual Environment
 
-\`\`\`bash
+
 python -m venv venv
 source venv/bin/activate # On Windows use \`venv\Scripts\activate\`
-\`\`\`
 
-### 3. Install Dependencies
 
-\`\`\`bash
+ 3. Install Dependencies
+    
 pip install -r requirements.txt
-\`\`\`
+
 
 ### 4. Database Setup
-
-\`\`\`bash
 
 # Create PostgreSQL database
 
 psql -U postgres
 CREATE DATABASE anime_recommendation_db;
-\q
-\`\`\`
+
 
 ### 5. Run Migrations
 
-\`\`\`bash
+
 python manage.py makemigrations
 python manage.py migrate
-\`\`\`
 
-### 6. Create Superuser
 
-\`\`\`bash
+### 6. Create Superuser(Optional)
+
+
 python manage.py createsuperuser
-\`\`\`
+
 
 ### 7. Run Development Server
 
-\`\`\`bash
 python manage.py runserver
-\`\`\`
+
 
 ## API Endpoints
 
@@ -84,7 +77,7 @@ python manage.py runserver
 
 ## Project Structure
 
-\`\`\`
+
 anime_recommendation_project/
 │
 ├── authentication/
@@ -99,18 +92,20 @@ anime_recommendation_project/
 │
 └── recommendations/
 └── views.py # Recommendation logic
-\`\`\`
 
-## Testing
 
-\`\`\`bash
-python manage.py test
-\`\`\`
+#Use thunder client or postman to run all the APIs
+REST API Endpoints:
+/auth/register – Register a new user.
+/auth/login – Login and retrieve a JWT token.
+/anime/search – Search anime by name or genre.
+/anime/recommendations – Fetch recommendations for the authenticated user.recommendations must come based on user prefrences
+/user/preferences – Manage user preferences (e.g., favorite genres).
+![image](https://github.com/user-attachments/assets/d48e0f0e-e161-489f-8bf9-08e0aa1b95f0)
+![image](https://github.com/user-attachments/assets/53628a65-dd5d-4212-ac02-6c394e26a73f)
+![image](https://github.com/user-attachments/assets/47d7c22e-33a0-406c-9ca7-80c0c352a499)
+![image](https://github.com/user-attachments/assets/e0636415-4ba3-4773-ab43-7f7535150192)
 
-## Future Improvements
 
-- Implement more sophisticated recommendation algorithms
-- Add frontend interface
-- Enhance error handling
-- Optimize database queries
-  "@ > README.md
+
+
